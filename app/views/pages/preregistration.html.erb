@@ -1,0 +1,34 @@
+<% if user_signed_in? %>
+
+<div class="jumbotron">
+  <%= render 'layouts/title' %>
+
+    <div class="blockquote-box clearfix col-md-10 col-md-offset-1" style="padding-bottom: 10px;">
+      <h3>8th July 2015 12.30pm – 1.15pm</h3>
+      <br />
+      <p style="font-size: 18px;">Join INSERT KOL and Description</p>
+      <br/>
+      <div class="square pull-left">
+        <img src="#" height="150px" width="150px;" alt="" class="" />
+      </div>
+        <p style="font-size: 18px;">Insert Additional Details</p>
+        <br />
+        <div class="row">
+          <div class="marketing" align="center" style="margin-top: 25px;">
+          <%= link_to "Live Webcast", "#", class: "btn btn-primary" %>
+          <%= link_to "Archived Webcast", archive_path, class: "btn btn-danger" %> 
+          <br />
+        </div>
+
+        <br />
+        <br />
+
+      </div>
+      </div>
+    </div>
+
+  
+
+<% else %>
+  <%= render 'layouts/preregistration' %>
+<% end %>

@@ -1,0 +1,31 @@
+<!-- User info -->
+Name: <%= @user.name %>
+Email Address: <%= @user.email %>
+
+<!-- Feedback form contents to go her -->
+
+Feedback for lecture: <%= @feedback.lecture %>
+
+Q1: How relevant did you find the information presented to your day to day clinical work:
+
+<%= @feedback.relevance %>
+
+Q2: How did you find the amount of information presented?
+
+<%= @feedback.info_presented %>
+
+Q3: How likely is it that you will change your clinical practice as a result of what you have learned from this webinar?
+
+<%= @feedback.likelihood_change %>
+
+If you answered ‘very likely’ or ‘quite likely’ to the last question, please explain how in the following box:
+
+<%= @feedback.body %>
+
+Q4: How did you find the technical quality of the webinar?
+
+<%= @feedback.technical %>
+
+Please add any further comments below:
+
+<%= @feedback.comment %>

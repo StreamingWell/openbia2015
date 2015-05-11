@@ -1,0 +1,76 @@
+<% if user_signed_in? %>
+
+<div class="jumbotron" style="padding: 20px 72px 20px 68px;">
+	<%= render 'layouts/title' %>
+	<br>
+
+	<br>
+	<h3><span style="color: rgb(167, 43, 77)">Maximising quality of life for patients <br>with advanced prostate cancer*</span></h3>
+	<p>
+		Lawrence Drudge-Coates, Uro-Oncology Clinical Nurse Specialist <br>and Honorary Lecturer King’s College Hospital NHS Foundation Trust, London
+	</p>
+
+	<h6><span style="color: #A72B4D">Wednesday 15<sup>th</sup> January 2014 at 12.30-13.15</span></h6>
+	      <i>*This session will include a discussion regarding the enzalutamide clinical data.</i>
+
+<br>
+</br>
+	<img src="assets/webcast.png"/>
+
+	<div class="timer">
+		<script type="text/javascript" src="http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js"></script><script type="text/javascript">if (WIDGETBOX) WIDGETBOX.renderWidget('33a42047-6125-49af-bcf1-59036a8d9016');</script>
+
+		<div id="defaultCountdown"></div>
+
+	</div>
+<br>
+</br>
+	<div class"span12">
+	<%= link_to "Leave Feedback", evaluation_path, class: "btn btn-danger" %>
+</div>
+	<br>
+
+	<hr>
+
+
+
+	<h4><span style="color: rgb(167, 43, 77)">
+		Please submit a question in the box below:
+	</span></h4>
+
+<div class="login span8 offset1">
+	<div class="span6 offset1">
+	<!-- flash_notice to show if form submission is successful -->
+	<div class="alert alert-success" id="form-success" style="display: none;">
+		<strong>Thank you, your question was successfully sent.</strong>
+	</div>
+
+	<!-- flash_notice to show if form submission is unsuccessful -->
+	<div class="alert alert-error" id="form-error" style="display: none;">
+		<strong>Please fill in all fields.</strong>
+	</div>
+</div>
+		<%= simple_form_for @message, :url => contact_path, method: :post, remote: true, html: { class: "form-horizontal"} do |form| %>
+
+		  	 <%= form.input :body, label: 'Question', required: false, as: :text, input_html: { rows: "3" } %>
+		  <br>
+		  </div>
+
+			  <fieldset class="actions">
+			    <%= form.submit "Send", class: 'btn btn-primary btn-large' %>
+			  </fieldset>
+		<% end %>
+
+	<br>
+</br>
+	<p>
+		Please note, each webinar will last up to 45 minutes and will be available<br> to view at a later date, by registered users.
+	</p>
+</div>
+
+
+<% else %>
+
+      <%= render 'layouts/preregistration' %>
+
+<% end %>

@@ -1,0 +1,263 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,300italic,500);
+
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$btnPrimaryBackground: purple;
+
+@import 'bootstrap';
+
+   
+body {
+   font-family: 'Roboto', sans-serif;
+   color: #706F6F;
+   height: 100%;
+}
+
+a {
+    color: #CC0767;
+}
+
+
+
+hr {
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-style: solid none;
+    border-color: #CC0767;
+}
+
+/* Navbar */
+
+.navbar-default {
+    background-color: #00365C;
+    border-color: #00365C;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #CC0767;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #CC0767;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 12px 40px;
+    font-size: 18px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -moz-user-select: none;
+}
+
+.btn-danger {
+    color: #FFF;
+    background-color: #00365C;
+    border-color: #00365C;
+}
+
+.btn-danger:hover {
+    color: #FFF;
+    background-color: #00365C;
+    border-color: #00365C;
+}
+
+.btn-danger:focus {
+    color: #FFF;
+    background-color: #00365C;
+    border-color: #00365C;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #CC0767;
+    border-color: #CC0767;
+}
+
+.btn-primary:hover {
+    color: #FFF;
+    background-color: #CC0767;
+    border-color: #CC0767;
+}
+
+.btn-primary:focus {
+    color: #FFF;
+    background-color: #CC0767;
+    border-color: #CC0767;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: #00365C;
+    width: 100%;
+    z-index: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.jumbotron h1 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.jumbotron p {
+    font-size: 16px;
+}
+
+.jumbotron .help-inline {
+    color: #CC0767;
+    margin-left: 10px;
+}
+
+/* Background Image
+---------------------------------------------------*/
+
+.intro-header {
+    padding-top: 70px;
+    padding-bottom: 120px;
+    margin-bottom: 50px;
+    height: 100%;
+    background: url('https://s3.amazonaws.com/streamingwell/astellas-bg.gif') no-repeat scroll center center / cover transparent;
+    border-bottom: none;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 10px;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  padding-top: 25px;
+  padding-bottom: 200px;
+  margin-bottom: 25px;
+  height: 40px;
+  color: #706F6F;
+  width: 100%;
+  text-align: center;
+}
+
+#footer p {
+    font-size: inherit;
+    font-weight: 200px;
+}
+
+/* Alert Notices on Live Webcast page-break-inside: */
+
+.alert, .alert h4 {
+    color: #C09853;
+}
+
+.alert {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #FCF8E3;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+/* Form */
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    margin-left: -15px;
+}
+
+.panel-default {
+    border-color: #DDD;
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #F5F5F5;
+    border-color: #DDD;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.glyphicon-lg{font-size:3em}
+.blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; padding: 25px 25px 50px 25px; background-color: #fff;}
+.blockquote-box .square{width:100px;min-height:50px;margin-right:72px;text-align:left!important;}
+.blockquote-box.blockquote-primary{border-color:#357EBD}
+.blockquote-box.blockquote-primary .square{background-color:#428BCA;color:#FFF}
+.blockquote-box.blockquote-success{border-color:#4CAE4C}
+.blockquote-box.blockquote-success .square{background-color:#5CB85C;color:#FFF}
+.blockquote-box.blockquote-info{border-color:#46B8DA}
+.blockquote-box.blockquote-info .square{background-color:#5BC0DE;color:#FFF}
+.blockquote-box.blockquote-warning{border-color:#EEA236}
+.blockquote-box.blockquote-warning .square{background-color:#F0AD4E;color:#FFF}
+.blockquote-box.blockquote-danger{border-color:#D43F3A}
+.blockquote-box.blockquote-danger .square{background-color:#D9534F;color:#FFF}

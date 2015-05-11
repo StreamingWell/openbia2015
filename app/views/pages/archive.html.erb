@@ -1,0 +1,26 @@
+<% if user_signed_in? %>
+
+<div class="jumbotron">
+  <%= render 'layouts/title' %>
+    <div class="blockquote-box clearfix col-md-10 col-md-offset-1" align="center" style="padding-bottom: 10px;">
+      <h5 style="color:#CC0767">The following archived webinar(s) are available to view:</h5>
+      <h3>Professor Marcus Drake, <br />Consultant Urological Surgeon, Southmead Hospital, Bristol</h3>
+      <h3 style="color:#CC0767">Friday 4<sup>th</sup> July 2014 at 12.30-13.15</h3>
+      <br />
+      <!-- <img src="assets/archived-webcast.png" class="img-responsive"/> -->
+      <iframe src="//player.vimeo.com/video/100429807" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <br />
+
+      <%= render 'layouts/newfooter' %>
+
+    </div>
+
+    <br /> 
+      </div>
+    </div>
+  </div>
+
+
+<% else %>
+  <%= render 'layouts/preregistration' %>
+<% end %>

@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- Facebook sharing information tags -->
+	<!-- <meta property="og:title" content="*|MC:SUBJECT|*" /> -->
+
+	<!-- <title>*|MC:SUBJECT|*</title> -->
+	<style type="text/css">
+	/* Client-specific Styles */
+	#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+	body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+	body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+	/* Reset Styles */
+	body{margin:0; padding:0;}
+	img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+	table td{border-collapse:collapse;}
+	#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+	/* Template Styles */
+
+	/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Page
+			* @section background color
+			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
+			* @theme page
+			*/
+			body, #backgroundTable{
+				/*@editable*/ background-color:#FAFAFA;
+
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ border: 1px solid #DDDDDD;
+				background-image: url('http://streamingwell.tv/img/email-bg.jpg');
+				background-repeat: no-repeat;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1, .h1{
+				/*@editable*/ color:#939598;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:10px;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2, .h2{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:30px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3, .h3{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:26px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4, .h4{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:11px;
+				/*@editable*/ font-weight:100;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			.h4 i {
+				font-weight: 100;
+				color: rgb(167, 43, 77);
+				background: #fff;
+			}
+
+
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color for your email's preheader area.
+			* @theme page
+			*/
+			#templatePreheader{
+				/*@editable*/ background-color:#FAFAFA;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and border for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-bottom:0;
+			}
+
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding:0;
+				/*@editable*/ text-align:center;
+				/*@editable*/ vertical-align:middle;
+			}
+
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			#headerImage{
+				height:auto;
+				max-width:600px;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color for your email's body area.
+			*/
+			#templateContainer, .bodyContent{
+				/*@editable*/ background-color:#FFFFFF;
+				background-image: url('http://streamingwell.tv/img/email-bg.jpg');
+				background-repeat: no-repeat;
+			}
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.bodyContent img{
+				display:inline;
+				height:auto;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and top border for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-top:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent div{
+				/*@editable*/ color:#707070;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.footerContent img{
+				display:inline;
+			}
+
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			* @theme footer
+			*/
+			#social{
+				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ border:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			*/
+			#social div{
+				/*@editable*/ text-align:center;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			* @theme footer
+			*/
+			#utility{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			*/
+			#utility div{
+				/*@editable*/ text-align:center;
+			}
+
+			#monkeyRewards img{
+				max-width:190px;
+			}
+			</style>
+		</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" background-image="http://streamingwell.tv/img/email-bg.jpg" background-repeat: "no repeat">
+			<center>
+				<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+					<tr>
+						<td align="center" valign="top">
+							<!-- // Begin Template Preheader \\ -->
+							<table border="0" cellpadding="10" cellspacing="0" width="600" id="templatePreheader">
+								<tr>
+									<td valign="top" class="preheaderContent">
+
+										<!-- // Begin Module: Standard Preheader \ -->
+										<table border="0" cellpadding="10" cellspacing="0" width="100%">
+											<tr>
+												<td valign="top">
+													<div mc:edit="std_preheader_content"></div>
+												</td>
+												<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+												<td valign="top" width="190">
+													<div mc:edit="std_preheader_links"></div>
+												</td>
+												<!-- *|END:IF|* -->
+											</tr>
+										</table>
+										<!-- // End Module: Standard Preheader \ -->
+
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<!-- // Begin Template Body \\ -->
+							<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+								<tr>
+									<td valign="top" class="bodyContent">
+
+										<!-- // Begin Module: Standard Postcard Content \\ -->
+                                                <table border="0" cellpadding="20" cellspacing="0" width="80%">
+                                                    <tr mc:repeatable>
+                                                        <td valign="top">
+                                                        	<div mc:edit="postcard_heading00">
+                                                        		<img src="http://img855.imageshack.us/img855/4207/aome.jpg">
+                                                        		<br>
+                                                        	</br>
+                                                                <h1 class="h1"><span style="color: rgb(167, 43, 77)">Prostate Cancer Lunchtime Webinars</span></h1>
+																<h4><i>A multidisciplinary approach to prostate cancer understanding and management</i></h4>                                                            
+															</div>
+                                                            <br>
+                                                            <div mc:edit="std_content00">
+
+                                                            	
+																<p><i>Working together: organising care for optimal management of prostate cancer</i></p>
+																<p>Dr Simon Hughes, Consultant in Clinical Oncology and Ms Louisa Fleure, Advanced Prostate Cancer Specialist Nurse, Guy's Hospital, London</p>
+																<p>Tuesday 26<sup>th</sup> November 2013</p>
+
+																<p>Time: 12.30 to 13.15</p>
+
+                                                                <p>Dear <%= @user.name %> </p>
+
+																<p>Thank you for registering your interest in the Astellas Oncology live webinars.</p>
+
+																<p>This is just a reminder that at <strong>12.30 tomorrow</strong> Dr Simon Hughes and Ms Louisa Fleure from Guy's Hospital, London shall be presenting a webinar entitled:</p>
+
+																<p><i>Working together: organising care for optimal management of prostate cancer</i></p>
+
+
+																<p>Topics that will be covered in this webinar include:</p>
+																   <p><li>The multidisciplinary team (MDT) structure and roles</li></p>
+
+												                   <p><li>Managing patients with differing needs in an MDT environment</li></p>
+
+												                   <p><ul><li>Newly diagnosed patients</li></p>
+
+												                   <p><li>Patients with advanced disease</li></ul></p>
+
+												                   <p><li>Meeting the challenges of a ‘working’ MDT at Guy’s Hospital</li></p></p>
+																<br>
+
+																<p>This live webinar will last for 45 minutes where the first 30 minutes will be the presentation and the last 15 minutes will be an interactive Q&A session with Dr Simon Hughes and Ms Louisa Fleure.</p>
+
+																<p>Please note you will be able to submit your questions via the website during the live broadcast.</p>
+																
+
+																<p>To watch the webinar live, please login at <a href="http://www.astellasoncology.co.uk">www.astellasoncology.co.uk</a>. Your log-in details are as follows:</p>
+
+																<p><strong>Username: </strong><%= @user.email %></p>
+																<p><strong>Password: </strong>Your password was emailed to you when you first registered. If you have forgotten your password, please <a href="http://www.astellasoncology.co.uk/users/password/new">click here</a> to reset it.</p>
+
+																<br>
+
+																<p>We recommend that you check you are able to login and view the webinar page in advance of the webinar session. This is to ensure you have enough time to check whether your system has the right software and requirements to login and view the webinar successfully.</p> 
+
+																<p>Please note that depending on the system you are using, the minimum requirements needed are as follows:</p> 
+
+																<p>For desktop/laptop users:</p> 
+
+																<p><li>You will need a broadband connection with at least 500 Kbps for the best viewing experience</li></p>
+																<p><li> Cookies must be enabled </li></p>
+																<p><li>Ensure you are using a relatively up to date browser (Internet Explorer 7/Mozilla Firefox 4.0/ Google Chrome 14.0/ Safari 4.0)</li></p> 
+
+																<p>For more information, please visit the <a href="http://www.astellasoncology.co.uk">help centre page</a>.</p>
+														
+																<p>We do hope that you will be able to join us and you find the webinar interesting and informative.</p>
+
+																<p>Please note, details regarding speakers, topics and timings for the full webinar programme are available on the website.</p>
+
+
+																<p>Yours sincerely,</p>
+
+																<p>Astellas Oncology</p>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Postcard Content \\ -->
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="10" cellspacing="0" width="600" id="templateFooter">
+                                    	<tr>
+                                        	<td valign="top" class="footerContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr>
+                          
+                                                        <td valign="top" width="350">
+                                                            <div mc:edit="std_footer">
+																<p><em>Astellas Pharma Ltd.</em> </p>
+																<p><em>2000 Hillswood Drive </em></p>
+																<p><em>Chertsey</em> </p>
+																<p><em>KT16 0RS </em></p>
+																<p><em>United Kingdom </em></p>
+																<p><em>Registered in England and Wales under Registered No 00787610 </em></p>
+																<br />
+																
+																<em>Please do not reply to this email</em>
+																<em>Date of preparation: December 2013 Job code: XTD13057UKaj</em>
+                                                            <p><em>These webinars are organised and funded by Astellas Pharma Ltd.</em></p>
+												
+											
+
+															<small>Important: The information transmitted in this message is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you receive this message in error, please contact the sender and delete the material from any computer.</small>
+
+														<br>
+														<br>
+														&nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;
+
+														</div>
+													</td>
+												</tr>
+														
+														<!-- // Begin PI \\ -->
+                                                                <tr>
+                                                        <td colspan="2" valign="left">
+                                                            <div>
+                             
+<p><img src="http://warm-dawn-9465.herokuapp.com/assets/xtandi-logo-134.png" align="right"></p>
+
+<br>
+<br>     
+
+<p><strong>Xtandi&trade;</span> (enzalutamide) Prescribing Information -</strong> For full prescribing information please refer to the Summary of Product Characteristics.</p>
+
+<p><strong>Presentation:</strong> Xtandi&trade; 40 mg soft capsules each containing 40 mg of enzalutamide.</p>
+
+<p><strong>Indication:</strong> Xtandi&trade; is indicated for the treatment of adult men with metastatic castration resistant prostate cancer whose disease has progressed on or after docetaxel therapy</p>
+
+<p><strong>Posology and method of administration:</strong> Adults and elderly (≥ 65 years of age): The recommended dose is 160 mg enzalutamide (four 40 mg capsules) as a single oral daily dose. If a patient misses taking Xtandi&trade; at the usual time, the prescribed dose should be taken as close as possible to the usual time.  If a patient misses a dose for a whole day, treatment should be resumed the following day with the usual daily dose.</p>
+<p>If a patient experiences a ≥ Grade 3 toxicity or an intolerable adverse reaction, dosing should be withheld for one week or until symptoms improve to ≤ Grade 2, then resumed at the same or a reduced dose (120 mg or 80 mg) if warranted.</p>
+
+<p>Older people: No dose adjustment is necessary for older people.</p>
+
+<p>Hepatic impairment: No dose adjustment is necessary for patients with mild hepatic impairment; caution is advised in patients with moderate hepatic impairment; Xtandi&trade; is not recommended in patients with severe hepatic impairment.</p>
+
+<p>Renal impairment: No dose adjustment is necessary for patients with mild or moderate renal impairment.  Caution is advised in patients with severe renal impairment or end stage renal disease. Paediatric population:There is no relevant use of enzalutamide in the paediatric population.Contraception in males and females: It is not known whether enzalutamide or its metabolites are present in semen. A condom is required during and for 3 months after treatment with enzalutamide if the patient is engaged in sexual activity with a pregnant woman. If the patient engages in sexual intercourse with a woman of childbearing potential, a condom and another form of birth control must be used during and for 3 months after treatment. Studies in animals have shown reproductive toxicity.</p>
+
+<p><strong>Contraindications:</strong> Hypersensitivity to the active substance or to any of the excipients.
+Women who are or may become pregnant.</p>
+
+<p><strong>Warnings and Precautions:</strong> Caution should be used in administering Xtandi&trade; to patients with a history of seizures or otherpredisposing factors. In addition, the risk of seizure may be increased in patients receiving concomitant medicinal products that lower the seizure threshold. The AFFIRM study excluded patients with recent myocardial infarction, unstable angina, heart failure, long QT, bradycardia or uncontrolled hypertension. This should be taken into account if Xtandi&trade; is prescribed in these patients. </p>
+
+<p>Xtandi&trade; contains sorbitol (E420). Patients with rare hereditary problems of fructose intolerance should not take this medicinal product.</p>
+
+<p><strong>Drug interactions:</strong> Strong inhibitors (e.g. gemfibrozil) or inducers (e.g. rifampicin) of CYP2C8 are to be avoided or used with caution during enzalutamide treatment. If patients must be co-administered a strong CYP2C8 inhibitor, the dose of enzalutamide should be reduced to 80 mg once daily CYP3A4 plays a minor role in the metabolism of enzalutamide. No dose adjustment is necessary when Xtandi&trade; is co-administered with inhibitors or inducers of CYP3A4. Enzalutamide is a potent enzyme inducer and increases the synthesis of many enzymes and transporters; therefore, interaction with many common medicinal products that are substrates of enzymes or transporters is expected. Enzymes that may be induced include CYP3A4 in the liver and gut, CYP2C9, CYP2C19, CYP1A2 and uridine 5'-diphospho-glucuronosyltransferase (UGTs - glucuronide conjugating enzymes). The transport protein P-gp may also be induced, and probably other transporters as well, e.g. multidrug resistance-associated protein 2 (MRP2), breast cancer resistant protein (BCRP) and the organic anion transporting polypeptide 1B1 (OATP1B1). In vivo studies have shown that enzalutamide is a strong inducer of CYP3A4 and a moderate inducer of CYP2C9 and CYP2C19. The full induction potential of enzalutamide may not occur until approximately 1 month after the start of treatment, when steady-state plasma concentrations of enzalutamide are reached, although some induction effects may be apparent earlier. Patients taking medicinal products that are substrates of CYP3A4, CYP2C9, CYP2C19, CYP1A2 or UGT1A1 should be evaluated for possible loss of pharmacological effects (or increase in effects in cases where active metabolites are formed) during the first month of enzalutamide treatment, and dose adjustment should be considered as appropriate. If their therapeutic effect is of large importance to the patient, and dose adjustments are not easily performed based on monitoring of efficacy or plasma concentrations, these medicinal products are to be avoided or used with caution. In consideration of the long half-life of enzalutamide (5.8 days), effects on enzymes may persist for one month or longer after stopping enzalutamide. A gradual dose reduction of the concomitant medicinal product may be necessary when stopping enzalutamide treatment. In vitro data indicate that enzalutamide may be an inhibitor of the efflux transporter P-gp. The effect of enzalutamide on P-gp substrates has not been evaluated in vivo; however, under conditions of clinical use, enzalutamide may be an inducer of P-gp via activation of the nuclear pregnane receptor (PXR). Medicinal products with a narrow therapeutic range that are substrates for P-gp (e.g. colchicine, dabigatran etexilate, digoxin) should be used with caution when administered concomitantly with Xtandi&trade; and may require dose adjustment to maintain optimal plasma concentrations.
+The safety and efficacy of concomitant use of Xtandi&trade; with cytotoxic chemotherapy has not been established.</p>
+
+<p><strong>Undesirable effects:</strong>  Very Common (≥ 1/10): headache, hot flush; Common (≥ 1/100 to < 1/10): neutropenia, visual hallucinations, anxiety, cognitive disorders, memory impairment, hypertension, dry skin, pruritus, fractures, falls; Uncommon (≥ 1/1,000 to < 1/100): leucopenia, seizure, amnesia, disturbance in attention. (In the AFFIRM study, six patients (0.8%) experienced a seizure out of 800 patients treated with a daily dose of 160 mg enzalutamide).</p>
+
+<p><strong>Packs and Cost:</strong> 40mg capsules x 112: £2,734.67 Legal Classification: POM. Marketing authorisation number: EU/1/13/846/001</p>
+
+<p><strong>Date of Preparation of PI:</strong> June 2013. <strong>Job number of PI:</strong> PRE13003UK  <strong>Further information available from:</strong> Astellas Pharma Ltd, 2000 Hillswood Drive, Chertsey. KT16 0RS.  <strong>For Medical Information phone:</strong> 0800 783 5018 </p>
+
+<div class="adverse">
+<p>Adverse events should be reported. Reporting forms and information can be found at <a href="www.mhra.gov.uk/yellowcard">www.mhra.gov.uk/yellowcard</a>. Adverse events should also be reported to Astellas Pharma Ltd. Please contact 0800 783 501 </p>
+</div>
+<!-- // Begin PI \\ -->
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
