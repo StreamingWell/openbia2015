@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,300italic,500);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic);
 
 $navbarBackgroundHighlight: white;
 $navbarBackground: white;
@@ -8,7 +8,7 @@ $btnPrimaryBackground: purple;
 
    
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Noto Sans', sans-serif;
    color: #706F6F;
    height: 100%;
 }
@@ -151,7 +151,7 @@ hr {
     padding-bottom: 120px;
     margin-bottom: 50px;
     height: 100%;
-    background: url('https://s3.amazonaws.com/streamingwell/astellas-bg.gif') no-repeat scroll center center / cover transparent;
+    /* background: url('#') no-repeat scroll center center / cover transparent; */
     border-bottom: none;
 }
 
