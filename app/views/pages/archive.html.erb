@@ -1,14 +1,16 @@
 <% if user_signed_in? %>
 
 <div class="jumbotron">
-  <%= render 'layouts/title' %>
-    <div class="blockquote-box clearfix col-md-10 col-md-offset-1" align="center" style="padding-bottom: 10px;">
-      <h5 style="color:#CC0767">The following archived webinar(s) are available to view:</h5>
-      <h3>Professor Marcus Drake, <br />Consultant Urological Surgeon, Southmead Hospital, Bristol</h3>
-      <h3 style="color:#CC0767">Friday 4<sup>th</sup> July 2014 at 12.30-13.15</h3>
+  <!-- <%= render 'layouts/title' %> -->
+
+    <div class="blockquote-box clearfix col-md-8 col-md-offset-2" align="left" style="padding-bottom: 10px; margin-top:-25px;">
+      <h3>Archived Webinar : Insert Title</h3>
+      <hr>
+      <p>Professor Marcus Drake, <br />Consultant Urological Surgeon, Southmead Hospital, Bristol</p>
+      <p style="color:#CC0767">Friday 4<sup>th</sup> July 2014 at 12.30-13.15</p>
       <br />
       <!-- <img src="assets/archived-webcast.png" class="img-responsive"/> -->
-      <iframe src="//player.vimeo.com/video/100429807" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/100429807' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
       <br />
 
       <%= render 'layouts/newfooter' %>

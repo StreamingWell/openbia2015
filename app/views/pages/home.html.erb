@@ -1,16 +1,12 @@
 <% if user_signed_in? %>
 
-<div class="jumbotron" style="padding: 20px 72px 20px 68px;">
-  <%= render 'layouts/title' %>
-  <br>
-  <br>
-
-<div class="span8 offset1">
+<div class="jumbotron" >
+  <!-- <%= render 'layouts/title' %> -->
 <div class="accordion" id="accordion2">
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        <h5><span style="color: #A72B4D">Working together: organising care <br>for optimal management of prostate cancer*</span></h5>
+        <h5><span style="color: #A72B4D">Working together: organising care for optimal management of prostate cancer*</span></h5>
 
          <h6><strong><span style="color: #939598">
           Dr  Hughes, Consultant in Clinical Oncology and <br>Ms Louisa Fleure, Advanced Prostate Cancer Specialist Nurse, Guy's Hospital, London
@@ -232,4 +228,5 @@
 
 </div>
 <% end %>
+<%= render 'layouts/footer' %>
 

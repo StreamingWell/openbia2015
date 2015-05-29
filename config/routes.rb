@@ -11,7 +11,7 @@ Openmicrosite::Application.routes.draw do
   devise_for :users
 
   # Static pages
-  get 'home' => 'pages#archive'
+  get 'home' => 'pages#home'
   get 'live' => 'pages#live'
   get 'archive' => 'pages#archive'
   get 'holding' => 'pages#holding'

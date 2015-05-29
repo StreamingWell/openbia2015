@@ -2,9 +2,9 @@
 	<%= render 'layouts/title' %>
 </div>
 
-<div class="blockquote-box clearfix col-md-10 col-md-offset-1" align="left">
-        <h1>Webinar Feedback Form</h1>
-        <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
+<div class="col-md-12" align="left">
+    <h3>Webinar Feedback Form</h1>
+    <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
 
 		<!-- flash_notice to show if form submission is successful -->
 	<div class="alert alert-success" id="form-success" style="display: none;">
@@ -16,7 +16,9 @@
 		<strong>Please fill in all fields.</strong>
 	</div>
 
-<div class="login span8">
+	<br />
+
+<div class="">
 		<%= simple_form_for @feedback, :url => feedback_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
 			<h4>Firstly, please indicate which webinar you are providing feedback for?</h4>
