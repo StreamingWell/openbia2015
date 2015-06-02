@@ -1,26 +1,24 @@
 <div class="jumbotron">
 	
 	<%= render 'layouts/title' %>
-		    
-<div class="col-md-6 col-md-offset-3">
-			<!-- <div class="panel panel-default"> -->
-		 		 <!-- <div class="panel-heading"><h3 class="panel-title"><strong>Log in</strong></h3></div> -->
-		  			<!-- <div class="panel-body"> -->
-						<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
-				    	<%= f.input :email, :autofocus => true, label: "Email Address" %>
-				    	<%= f.input :password %>
+</div>
+<div class="container">		    
+	<div class="col-md-12">
+			
+		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
+    	<%= f.input :email, :autofocus => true, label: "Email Address" %>
+    	<%= f.input :password %>
 		<br />
 	    <fieldset>
 	   		<%= f.button :submit, "Login", class: 'btn btn-primary btn-large' %>
 		</fieldset>
 		<% end %>
-		</div>
 	</div>
 </div>
-</div>
+
 <br />
 <br />
-<div class="col-md-8 col-md-offset-1" style="margin-top: 450px;">
+<div class="col-md-12" style="margin-top: 250px;">
 
 	<%= render 'layouts/prefooter' %>
 
