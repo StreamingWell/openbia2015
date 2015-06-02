@@ -11,6 +11,7 @@ body {
    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
    color: #706F6F;
    height: 100%;
+   overflow-x: hidden;
 }
 
 a {
@@ -19,7 +20,9 @@ a {
     text-decoration: none !important;
 }
 
-
+h1 {
+    font-size: 20px;
+}
 
 hr {
     -moz-border-top-colors: none;
@@ -43,20 +46,20 @@ hr {
 }
 
 .navbar-default {
-    background-color: #e9e9e9;
-    border-color: #e9e9e9;
+    background-color: #00365C;
+    border-color: #00365C;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #00365C;
+    color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #CC0767;
+    color: #e9e9e9;
 }
 
 .navbar-default .navbar-nav > li > a:focus {
-    color: #CC0767;
+    color: #e9e9e9;
 }
 
 .navbar-default .navbar-brand {
@@ -78,6 +81,10 @@ hr {
     background-image: none;
 }
 
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+
 .btn {
     display: inline-block;
     margin-bottom: 0px;
@@ -89,10 +96,10 @@ hr {
     border: 1px solid transparent;
     white-space: nowrap;
     padding: 12px 40px;
-    font-size: 18px;
     line-height: 1.42857;
     border-radius: 4px;
     -moz-user-select: none;
+    box-shadow: 0 3px 0 0 #007299;
 }
 
 .btn-danger {
@@ -113,22 +120,26 @@ hr {
     border-color: #00365C;
 }
 
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
 .btn-primary {
-    color: #FFF;
-    background-color: #CC0767;
-    border-color: #CC0767;
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e;
 }
 
 .btn-primary:hover {
     color: #FFF;
-    background-color: #CC0767;
-    border-color: #CC0767;
+    background-color: #00365C;
+    border-color: #00365C;
 }
 
 .btn-primary:focus {
     color: #FFF;
-    background-color: #CC0767;
-    border-color: #CC0767;
+    background-color: #00365C;
+    border-color: #00365C;
 }
 
 .jumbotron {
@@ -136,8 +147,8 @@ hr {
     color: #00365C;
     width: 100%;
     z-index: 100%;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
 .jumbotron h1 {
@@ -153,6 +164,13 @@ hr {
     color: #CC0767;
     margin-left: 10px;
 }
+
+/* Hero Unit
+---------------------------------------------------*/
+
+.hero-unit li {
+}
+
 
 /* Background Image
 ---------------------------------------------------*/
@@ -260,7 +278,8 @@ body {
 }
 
 .glyphicon-lg{font-size:3em}
-.blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; padding: 25px 25px 50px 25px; background-color: #fff;}
+/* .blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; padding: 25px 25px 50px 25px; background-color: #fff;} */
+.blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; background-color: #fff;}
 .blockquote-box .square{width:100px;min-height:50px;margin-right:72px;text-align:left!important;}
 .blockquote-box.blockquote-primary{border-color:#357EBD}
 .blockquote-box.blockquote-primary .square{background-color:#428BCA;color:#FFF}

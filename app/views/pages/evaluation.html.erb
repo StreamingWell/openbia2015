@@ -2,63 +2,65 @@
 	<%= render 'layouts/title' %>
 </div>
 
-<div class="col-md-12" align="left">
-    <h3>Webinar Feedback Form</h1>
-    <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
+<div class="container">
+      <div class="blockquote-box clearfix col-md-8 col-md-offset-2" align="left" style="padding-bottom: 10px; margin-top:-25px;">
+	    <h3>Webinar Feedback Form</h1>
+	    <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
 
-		<!-- flash_notice to show if form submission is successful -->
-	<div class="alert alert-success" id="form-success" style="display: none;">
-		<strong>Thank you for your feedback.</strong>
-	</div>
+			<!-- flash_notice to show if form submission is successful -->
+		<div class="alert alert-success" id="form-success" style="display: none;">
+			<strong>Thank you for your feedback.</strong>
+		</div>
 
-	<!-- flash_notice to show if form submission is unsuccessful -->
-	<div class="alert alert-error" id="form-error" style="display: none;">
-		<strong>Please fill in all fields.</strong>
-	</div>
+		<!-- flash_notice to show if form submission is unsuccessful -->
+		<div class="alert alert-error" id="form-error" style="display: none;">
+			<strong>Please fill in all fields.</strong>
+		</div>
 
-	<br />
+		<br />
 
-<div class="">
-		<%= simple_form_for @feedback, :url => feedback_path, method: :post, html: { class: "form-horizontal"} do |form| %>
+	<div class="">
+			<%= simple_form_for @feedback, :url => feedback_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
-			<h4>Firstly, please indicate which webinar you are providing feedback for?</h4>
-				<%= form.input :lecture, as: :radio_buttons, collection: ['Working together: organising care for optimal management of prostate cancer', 'Maximising quality of life for patients with advanced prostate cancer', 'Androgens and prostate cancer: source, role and management'], label: false %>
+				<h4>Firstly, please indicate which webinar you are providing feedback for?</h4>
+					<%= form.input :lecture, as: :radio_buttons, collection: ['Working together: organising care for optimal management of prostate cancer', 'Maximising quality of life for patients with advanced prostate cancer', 'Androgens and prostate cancer: source, role and management'], label: false %>
+				<br>
+
+			<h4>Q1: How relevant did you find the information presented to your day to day clinical work?</h4>
+
+				<%= form.input :relevance, as: :radio_buttons, collection: ['Very relevant', 'Partly relevant', 'Not at all relevant'], label: false %>
+				<br>
+
+			<h4>Q2: How did you find the amount of information presented?</h4>
+				<%= form.input :info_presented, as: :radio_buttons, collection: ['Too much', 'About right', 'Too little'], label: false %>
+				<br>
+
+			<h4>Q3: How likely is it that you will change your clinical practice as a result of what you have learned from this webinar?</h4>
+
+				<%= form.input :likelihood_change, as: :radio_buttons, collection: ['Very likely', 'Quite likely', 'Unlikely'], label: false %>
+				<br>
+
+				<p>Please explain your response in the following box</p>
+	  			<%= form.input :body, label: false, required: false, as: :text, input_html: { rows: "3" } %>
+
 			<br>
 
-		<h4>Q1: How relevant did you find the information presented to your day to day clinical work?</h4>
+			<h4>Q4: How did you find the technical quality of the webinar?</h4>
 
-			<%= form.input :relevance, as: :radio_buttons, collection: ['Very relevant', 'Partly relevant', 'Not at all relevant'], label: false %>
-			<br>
+				<%= form.input :technical, as: :radio_buttons, collection: ['Good', 'Satisfactory', 'Poor'], label: false %>
+				<br>
 
-		<h4>Q2: How did you find the amount of information presented?</h4>
-			<%= form.input :info_presented, as: :radio_buttons, collection: ['Too much', 'About right', 'Too little'], label: false %>
-			<br>
+	  			<p><strong>Please add any further comments below:</strong></p>
+			  	  <%= form.input :comment, label: false, required: false, as: :text, input_html: { rows: "3" } %>
+			  <br>
+			  <p>Thank you very much for your feedback.</p>
+			  <br>
+			  </div>
 
-		<h4>Q3: How likely is it that you will change your clinical practice as a result of what you have learned from this webinar?</h4>
-
-			<%= form.input :likelihood_change, as: :radio_buttons, collection: ['Very likely', 'Quite likely', 'Unlikely'], label: false %>
-			<br>
-
-			<p>Please explain your response in the following box</p>
-  			<%= form.input :body, label: false, required: false, as: :text, input_html: { rows: "3" } %>
-
-		<br>
-
-		<h4>Q4: How did you find the technical quality of the webinar?</h4>
-
-			<%= form.input :technical, as: :radio_buttons, collection: ['Good', 'Satisfactory', 'Poor'], label: false %>
-			<br>
-
-  			<p><strong>Please add any further comments below:</strong></p>
-		  	  <%= form.input :comment, label: false, required: false, as: :text, input_html: { rows: "3" } %>
-		  <br>
-		  <p>Thank you very much for your feedback.</p>
-		  <br>
-		  </div>
-
-			  <fieldset class="actions">
-			    <%= form.submit "Submit", class: 'btn btn-primary btn-large' %>
-			  </fieldset>
-		<% end %>
+				  <fieldset class="actions">
+				    <%= form.submit "Submit", class: 'btn btn-primary btn-large' %>
+				  </fieldset>
+			<% end %>
+		</div>
 	</div>
 </div>
