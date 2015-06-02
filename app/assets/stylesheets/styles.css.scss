@@ -7,11 +7,12 @@ $btnPrimaryBackground: purple;
 @import 'bootstrap';
 
    
-body {
+html, body {
    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
    color: #706F6F;
    height: 100%;
    overflow-x: hidden;
+   background-image: url(http://wallpaperscraft.com/image/68524/2560x1080.jpg);
 }
 
 a {
@@ -37,7 +38,7 @@ hr {
 /* Navbar */
 
 .navbar {
-    min-height: 50px !important;
+    min-height: 55px !important;
 }
 
 .navbar-nav {
@@ -147,7 +148,8 @@ hr {
     color: #00365C;
     width: 100%;
     z-index: 100%;
-    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 0px;
 }
 
@@ -194,37 +196,19 @@ hr {
 /* Sticky footer styles
 -------------------------------------------------- */
 
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
-
 /* Wrapper for page content to push down footer */
-#wrap {
+.wrapper {
   min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
 }
 
 /* Set the fixed height of the footer here */
-#footer {
-  padding-top: 25px;
-  padding-bottom: 200px;
-  margin-bottom: 25px;
-  height: 40px;
-  color: #706F6F;
-  width: 100%;
-  text-align: center;
+.footer, .push {
+    height: 4em;
 }
 
-#footer p {
-    font-size: inherit;
-    font-weight: 200px;
-}
 
 /* Alert Notices on Live Webcast page-break-inside: */
 

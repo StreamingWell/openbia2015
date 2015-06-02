@@ -4,12 +4,12 @@
 
 <div class="container">
       <div class="blockquote-box clearfix col-md-8 col-md-offset-2" align="left" style="padding-bottom: 10px; margin-top:-25px;">
-	    <h3>Webinar interactive Form</h1>
-	    <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing interactive regarding the webinar you have recently watched.</span></h5>
+	    <h3>Webinar Feedback Form</h1>
+	    <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
 
 			<!-- flash_notice to show if form submission is successful -->
 		<div class="alert alert-success" id="form-success" style="display: none;">
-			<strong>Thank you for your interactive.</strong>
+			<strong>Thank you for your feedback.</strong>
 		</div>
 
 		<!-- flash_notice to show if form submission is unsuccessful -->
@@ -20,9 +20,9 @@
 		<br />
 
 	<div class="">
-			<%= simple_form_for @interactive, :url => interactive_path, method: :post, html: { class: "form-horizontal"} do |form| %>
+			<%= simple_form_for @feedback, :url => feedback_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
-				<h4>Firstly, please indicate which webinar you are providing interactive for?</h4>
+				<h4>Firstly, please indicate which webinar you are providing feedback for?</h4>
 					<%= form.input :lecture, as: :radio_buttons, collection: ['Working together: organising care for optimal management of prostate cancer', 'Maximising quality of life for patients with advanced prostate cancer', 'Androgens and prostate cancer: source, role and management'], label: false %>
 				<br>
 
@@ -53,7 +53,7 @@
 	  			<p><strong>Please add any further comments below:</strong></p>
 			  	  <%= form.input :comment, label: false, required: false, as: :text, input_html: { rows: "3" } %>
 			  <br>
-			  <p>Thank you very much for your interactive.</p>
+			  <p>Thank you very much for your feedback.</p>
 			  <br>
 			  </div>
 
