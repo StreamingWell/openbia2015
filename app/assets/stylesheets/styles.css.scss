@@ -9,14 +9,14 @@ $btnPrimaryBackground: purple;
    
 html, body {
    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-   color: #706F6F;
+   color: #4d4d4d;
    height: 100%;
    overflow-x: hidden;
-   background-image: url(http://wallpaperscraft.com/image/68524/2560x1080.jpg);
+   background-color: #fff;
 }
 
 a {
-    color: #CC0767;
+    color: #3787ad;
     outline: 0 !important;
     text-decoration: none !important;
 }
@@ -38,7 +38,7 @@ hr {
 /* Navbar */
 
 .navbar {
-    min-height: 55px !important;
+    min-height: 75px !important;
 }
 
 .navbar-nav {
@@ -47,8 +47,9 @@ hr {
 }
 
 .navbar-default {
-    background-color: #00365C;
-    border-color: #00365C;
+    background-color: #3787ad;
+    border-bottom: solid 5px;
+    border-color: #afcfde;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -94,53 +95,48 @@ hr {
     vertical-align: middle;
     cursor: pointer;
     background-image: none;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     white-space: nowrap;
     padding: 12px 40px;
     line-height: 1.42857;
     border-radius: 4px;
     -moz-user-select: none;
-    box-shadow: 0 3px 0 0 #007299;
 }
 
 .btn-danger {
     color: #FFF;
-    background-color: #00365C;
-    border-color: #00365C;
+    background-color: #3787ad;
+    border-color: #3787ad;
 }
 
 .btn-danger:hover {
     color: #FFF;
-    background-color: #00365C;
-    border-color: #00365C;
+    background-color: #afcfde;
+    border-color: #afcfde;
 }
 
 .btn-danger:focus {
     color: #FFF;
-    background-color: #00365C;
-    border-color: #00365C;
+    background-color: #afcfde;
+    border-color: #afcfde;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
 .btn-primary {
     color: #fff;
-    background-color: #3276b1;
-    border-color: #285e8e;
+    background-color: #27ae60;
+    border-color: #27ae60;
 }
 
 .btn-primary:hover {
     color: #FFF;
-    background-color: #00365C;
-    border-color: #00365C;
+    background-color: #2ecc71;
+    border-color: #2ecc71;
 }
 
 .btn-primary:focus {
     color: #FFF;
-    background-color: #00365C;
-    border-color: #00365C;
+    background-color: #2ecc71;
+    border-color: #2ecc71;
 }
 
 .jumbotron {
@@ -165,6 +161,19 @@ hr {
 .jumbotron .help-inline {
     color: #CC0767;
     margin-left: 10px;
+}
+
+
+.title-header {
+    background-color: #F5F5F5;
+    color: #00365C;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-top: -55px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 /* Hero Unit
@@ -260,6 +269,8 @@ hr {
     font-size: 12px;
     font-weight: 400;
 }
+
+/* Accordion */
 
 .glyphicon-lg{font-size:3em}
 /* .blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; padding: 25px 25px 50px 25px; background-color: #fff;} */
