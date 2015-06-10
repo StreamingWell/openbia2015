@@ -7,12 +7,14 @@
   </script>
 <% end %>
 
-  <div class="jumbotron">
-      <%= render 'layouts/title' %>
+<div class="title-header-1">
+  INSERT SLIDER
+</div>
       
     <div class="container">
-      <div class="blockquote-box clearfix col-md-6" style="padding-bottom: 10px;">
-      <p style="text-align:left;">To register for this webinar please complete the following information:</p>
+      <div class="blockquote-box clearfix col-md-12" style="padding-bottom: 10px; margin-top: -50px;">
+      <div class="col-md-6" style="margin-left: -15px;">
+        <p style="text-align:left;">To register for this webinar please complete the following information:</p>
         <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
           <p style="text-align:left;">Are you a healthcare professional? Please select either yes or no:</p>
 
@@ -38,19 +40,13 @@
                   <%= f.input :future, :as => :boolean, :label => "Accept", :input_html => { :checked => "unchecked", style: "margin-left: 50px; margin-top: -22px;" } %>
               <br>
               <p>Once you have registered, a confirmation email will be sent to you.</p>
-              <div class="marketing" align="center">
+              <div class="marketing" align="left">
                 <%= f.button :submit, "Submit", class: 'btn btn-primary btn-large' %>
               </div>
-              <br>
+            </div>
         </div><!-- demo -->
       </div>
         <% end %>
-
-        <br />
-      <br />
-      <%= render 'layouts/prefooter' %>
-
-      </div><!-- login -->
 
 <!-- Modal to show if not a healthcare professional -->
 <div class="modal fade" style="margin-top: 200px;" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
@@ -59,11 +55,15 @@
       <div class="modal-body">
         <h4><span style="color: #CC0767">Unfortunately as you are not a healthcare professional you are not permitted to view these webinars.</span></h4>
       </div>
-      <div class="modal-footer" style="color: #CC0767">
+      <div class="modal-footer">
         <%= link_to "Close", archive_path %>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<div class="col-md-12">      
+  <%= render 'layouts/newfooter' %>
+</div>
 </div>
 </div>

@@ -8,17 +8,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"><img src="#" alt="Boehringer Ingelheim Asthma Webinars"></a>
+          
+          <a href="http://www.biasthmawebinars.com" class="navbar-brand pull-left"><img src="http://www.streamingwell.tv/wp-content/uploads/2015/06/bi-asthma-webinars-logo.png" width="275px" height="160px" alt="Boehringer Ingelheim Asthma Webinars"></a>
+
         </div>
+          
         <% if user_signed_in? %>
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Home", root_path %></li>
-            <li><a href="#", target="_blank">Prescribing Information</a></li>
             <li><%= link_to "Help Centre", help_path %></li>
             <!-- <li><a href="mailto:#">Contact Us</a> </li> -->
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-            <li><%= link_to "Webinar Feedback", evaluation_path, class: 'btn btn-primary' %></li>
+            <li><%= link_to "Feedback", evaluation_path, class: 'btn btn-primary' %></li>
+            <li><img src="http://www.streamingwell.tv/wp-content/uploads/2015/06/BIL-Logo-white.png" width="125px" height="38px" style="margin: 10px 20px;" alt="Boehringer Ingelheim"></li>
           </ul>
         </div><!--/.nav-collapse -->
         <% else %>
@@ -28,6 +31,7 @@
             <li><%= link_to "Login", login_path %></li>
             <li><%= link_to "Help Centre", help_path %></li>
             <li><%= link_to 'Forgotten your password?', new_password_path(resource_name) %></li>
+            <li><img src="http://www.streamingwell.tv/wp-content/uploads/2015/06/BIL-Logo-white.png" width="125px" height="38px" style="margin: 10px 20px;" alt="Boehringer Ingelheim"></li>
           </ul>
         </div><!--/.nav-collapse -->
         <% end %>

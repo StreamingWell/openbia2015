@@ -1,11 +1,11 @@
-<div class="jumbotron">
-	<%= render 'layouts/title' %>
+<div class="title-header-1">
+	INSERT SLIDER
 </div>
 
 <div class="container">
-      <div class="blockquote-box clearfix col-md-8 col-md-offset-2" align="left" style="padding-bottom: 10px; margin-top:-25px;">
+      <div class="blockquote-box clearfix col-md-12" align="left" style="padding-bottom: 10px; margin-top:-125px;">
 	    <h3>Webinar Feedback Form</h1>
-	    <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
+	    <h5>We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
 
 			<!-- flash_notice to show if form submission is successful -->
 		<div class="alert alert-success" id="form-success" style="display: none;">
@@ -19,7 +19,7 @@
 
 		<br />
 
-	<div class="">
+	<div class="container">
 			<%= simple_form_for @feedback, :url => feedback_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
 				<h4>Firstly, please indicate which webinar you are providing feedback for?</h4>
@@ -62,5 +62,10 @@
 				  </fieldset>
 			<% end %>
 		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="col-md-12">
+		<%= render 'layouts/newfooter' %>
 	</div>
 </div>
