@@ -13,7 +13,11 @@ Openmicrosite::Application.routes.draw do
   # Static pages
   get 'home' => 'pages#home'
   get 'homenew' => 'pages#homenew'
+  get 'homenew-2' => 'pages#homenew-2'
   get 'live' => 'pages#live'
+  get 'live-1' => 'pages#live-1'
+  get 'live-2' => 'pages#live-2'
+  get 'live-3' => 'pages#live-3'
   get 'archive' => 'pages#archive'
   get 'holding' => 'pages#holding'
   get 'login' => 'pages#login'

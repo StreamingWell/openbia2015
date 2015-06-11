@@ -5,13 +5,13 @@ class Feedback
   extend ActiveModel::Naming
 
   attr_accessor :lecture, :relevance, :info_presented, :likelihood_change,
-                :technical, :body, :comment
+                :technical, :body, :comment, :future, :follow
 
   validates :lecture, :relevance, :info_presented, :likelihood_change,
-            :body, :technical, presence: true
+            :body, :technical, :future, :follow, presence: true
 
   validates :lecture, :relevance, :info_presented, :likelihood_change,
-            :body, :technical, presence: true
+            :body, :technical, :future, :follow, presence: true
 
   def initialize(attributes = {})
     attributes.each do |name, value|

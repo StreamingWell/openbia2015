@@ -4,26 +4,21 @@
 
 <div class="container">
 	<div class="blockquote-box clearfix col-md-12" align="left" style="padding-bottom: 10px; margin-top:-50px;">
-			<!-- <div class="panel panel-default"> -->
-		 		 <!-- <div class="panel-heading"><h3 class="panel-title"><strong>Log in</strong></h3></div> -->
-		  			<!-- <div class="panel-body"> -->
-						<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
+			
+		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
 				    	<%= f.input :email, :autofocus => true, label: "Email Address" %>
 				    	<%= f.input :password %>
 		<br />
-	    <fieldset>
-	   		<%= f.button :submit, "Login", class: 'btn btn-primary btn-large' %>
+	   
+	  <fieldset>
+	   	<%= f.button :submit, "Login", class: 'btn btn-primary btn-large' %>
 		</fieldset>
+		
 		<% end %>
-		</div>
+
+		<br />
+
+		<%= render 'layouts/newfooter' %>
+
 	</div>
-</div>
-</div>
-<br />
-<br />
-<div class="col-md-12">
-
-	<%= render 'layouts/prefooter' %>
-
-</div>
 </div>
