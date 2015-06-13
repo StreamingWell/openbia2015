@@ -58,6 +58,10 @@ hr {
   font-style: normal;
 }
 
+.no-click {
+    pointer-events: none;
+}
+
 /* Navbar */
 
 .navbar {
@@ -155,6 +159,24 @@ hr {
     color: #FFF;
     background-color: #afcfde;
     border-color: #afcfde;
+}
+
+.btn-inactive {
+    color: #FFF;
+    background-color: #ddd;
+    border-color: #ddd;
+}
+
+.btn-inactive:hover {
+    color: #FFF;
+    background-color: #ddd;
+    border-color: #ddd;
+}
+
+.btn-inactive:focus {
+    color: #FFF;
+    background-color: #ddd;
+    border-color: #ddd;
 }
 
 .btn-primary {

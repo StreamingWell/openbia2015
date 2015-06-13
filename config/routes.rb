@@ -1,7 +1,7 @@
 Openmicrosite::Application.routes.draw do
 
   # Home
-  root :to => 'pages#preregistration'
+  root :to => 'pages#home'
 
   # Live Webinar
   #root :to => 'pages#live'
@@ -35,9 +35,4 @@ Openmicrosite::Application.routes.draw do
   match 'feedback' => 'feedback#new', :as => 'feedback', :via => :get
   match 'feedback' => 'feedback#create', :as => 'feedback', :via => :post
 
-  # Interactive/submissions
-  match 'contact' => 'contact#new', :as => 'contact', :via => :get
-  match 'contact' => 'contact#create', :as => 'contact', :via => :post
-  match 'interactive' => 'interactive#new', :as => 'interactive', :via => :get
-  match 'interactive' => 'interactive#create', :as => 'interactive', :via => :post
 end
