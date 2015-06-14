@@ -10,28 +10,46 @@ class PagesController < ApplicationController
     @message = Message.new
   end
 
-  def live_jan_15
+  def live_jul_8
     @message = Message.new
   end
   
-  def live_mar_6
+  def live_jul_16
+    @message = Message.new
+  end 
+
+  def live_sept_9
     @message = Message.new
   end  
 
   def archive
   end
 
-  def zinc
+  def archive_jul_8
+    @message = Message.new
   end
+  
+  def archive_jul_16
+    @message = Message.new
+  end 
 
-  def pi
-  end
+  def archive_sept_9
+    @message = Message.new
+  end  
 
   def preregistration
   end
 
   def evaluation
     @feedback = Feedback.new
+  end
+
+  def firstinteractive
+    @firstinteractive = Firstinteractive.new
+  end
+
+  def secondinteractive
+    @secondinteractive = Secondinteractive.new
   end
 
   protected

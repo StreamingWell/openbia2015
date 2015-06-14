@@ -20,7 +20,7 @@
 		<br />
 
 	<div class="">
-			<%= simple_form_for @feedback, :url => feedback_path, method: :post, html: { class: "form-horizontal"} do |form| %>
+			<%= simple_form_for @firstinteractive, :url => firstinteractive_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
 				<h4>Firstly, please indicate which webinar you are providing feedback for?</h4>
 					<%= form.input :lecture, as: :radio_buttons, collection: ['Working together: organising care for optimal management of prostate cancer', 'Maximising quality of life for patients with advanced prostate cancer', 'Androgens and prostate cancer: source, role and management'], label: false %>

@@ -30,6 +30,7 @@ a {
 
 h1 h2 h3 h4 h5 h6 {
     color: #3787ad !important;
+    line-height: 1.4em;
 }
 
 h1 {
@@ -75,7 +76,7 @@ hr {
 
 .navbar-default {
     background-color: #3787ad;
-    border-bottom: solid 5px;
+    border-bottom: solid 6px;
     border-color: #afcfde;
 }
 
@@ -264,6 +265,11 @@ hr {
     background-repeat: no-repeat; 
 }
 
+
+#footer{
+    padding-bottom: 25px;
+}
+
 /* Hero Unit
 ---------------------------------------------------*/
 
@@ -362,7 +368,7 @@ hr {
 
 .glyphicon-lg{font-size:3em}
 /* .blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; padding: 25px 25px 50px 25px; background-color: #fff;} */
-.blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; background-color: #fff; padding: 25px 50px 10px;}
+.blockquote-box{border-right:0px solid #E6E6E6;margin-bottom:25px; background-color: #fff; padding: 25px 50px 25px;}
 .blockquote-box .square{width:100px;min-height:50px;margin-right:72px;text-align:left!important;}
 .blockquote-box.blockquote-primary{border-color:#357EBD}
 .blockquote-box.blockquote-primary .square{background-color:#428BCA;color:#FFF}
@@ -374,7 +380,6 @@ hr {
 .blockquote-box.blockquote-warning .square{background-color:#F0AD4E;color:#FFF}
 .blockquote-box.blockquote-danger{border-color:#D43F3A}
 .blockquote-box.blockquote-danger .square{background-color:#D9534F;color:#FFF}
-
 
 /* Background */
 

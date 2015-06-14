@@ -1,29 +1,26 @@
 <div class="title-header-1">
 	INSERT SLIDER
 </div>
+
 <div class="container">
-	<div class="blockquote-box clearfix col-md-12" align="left" style="margin-top: -50px;">
+	<div class="blockquote-box clearfix col-md-12" align="left" style="margin-top: -75px;">
+		
+<div class="col-md-6">
+	test
+</div>
+<div class="col-md-6">
 		<p>Forgotten your password?</p>
-		<!-- <div class="panel panel-default"> -->
-		 	<!-- <div class="panel-heading"><h3 class="panel-title"><strong>Log in</strong></h3></div> -->
-		  	<!-- <div class="panel-body"> -->
 			<%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
-	    	<%= f.input :email, :autofocus => true, label: "Email Address" %>
-		<br />
+	    <%= f.input :email, :autofocus => true, label: "Email Address" %>
+			<br />
 	    <fieldset>
 	   		<%= f.button :submit, "Reset Password", class: "btn btn-danger" %>
-		</fieldset>
+			</fieldset>
 		<% end %>
-		</div>
+
+		<br />
+
+		<%= render 'layouts/newfooter' %>
+</div>
 	</div>
-</div>
-</div>
-
-<br />
-
-<div class="col-md-12">
-
-	<%= render 'layouts/prefooter' %>
-
-</div>
 </div>
