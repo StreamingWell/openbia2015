@@ -8,46 +8,67 @@
 <% end %>
 
 <div class="title-header-1">
-  INSERT SLIDER
 </div>
       
 <div class="container">
-  <div class="blockquote-box clearfix col-md-12" style="padding-bottom: 10px; margin-top: -50px;">
-    <div class="col-md-6">
+  <div class="blockquote-box clearfix col-md-12" style="padding-bottom: 10px; margin-top: -75px;">
+    <div class="col-md-12">
       <p style="text-align:left;">To register for this webinar please complete the following information:</p>
       <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
       <p style="text-align:left;">Are you a healthcare professional? Please select either yes or no:</p>
+      <br />
+      <button type="button" class="btn btn-primary btn-large" data-toggle="collapse" data-target="#demo">Yes</button>
+      <!-- Button trigger modal -->
+      <a data-toggle="modal" href="#myModal" class="btn btn-danger btn-large">No</a>
+      </br />
+    </div>
 
-        <div class="marketing" align="left">
-          <button type="button" class="btn btn-primary btn-large" data-toggle="collapse" data-target="#demo">Yes</button>
-          <!-- Button trigger modal -->
-          <a data-toggle="modal" href="#myModal" class="btn btn-danger btn-large">No</a>
-        </div>
+    <br />
 
+    <div id="demo" class="collapse out">
+      <div class="col-md-12">
         <br />
-
-          <div id="demo" class="collapse out" style="">
-            <%= f.input :name, :autofocus => true, label: "Name:" %>
-            <%= f.input :email, :autofocus => true, label: "Work email address:"%>
-            <%= f.input :company, :autofocus => true, label: "Place of work:" %>
-            <%= f.input :job, :autofocus => true, label: "Job title:" %>
-            <%= f.input :password, label: "Password:" %>
-            <%= f.input :password_confirmation, label: "Password confirmation:" %>
-
-            <h6>Please tick this box if you permit Boehringer Ingelheim to send you two reminder emails prior to the live webinar and an email when the webinar is archived for viewing on the website.</h6>
-            <%= f.input :reminder, :as => :boolean, :label => "Accept", :input_html => { :checked => "unchecked", style: "margin-left: 50px; margin-top: -22px;" } %>
-            <h6>Please tick this box if you permit Boehringer Ingelheim to contact you in the future regarding other similar activities.</h6>
-            <%= f.input :future, :as => :boolean, :label => "Accept", :input_html => { :checked => "unchecked", style: "margin-left: 50px; margin-top: -22px;" } %>
-            
-            <br />
-            
-            <p>Once you have registered, a confirmation email will be sent to you.</p>
-          
-            <div class="marketing" align="left">
-              <%= f.button :submit, "Submit", class: 'btn btn-primary btn-large' %>
-            </div>
+        <hr>
+      </div>
+        <div class="col-md-6">
+          <br />
+          <%= f.input :name, :autofocus => true, label: "Name:" %>
+          <br />
+          <%= f.input :email, :autofocus => true, label: "Work email address:"%>
+          <br />
+          <%= f.input :company, :autofocus => true, label: "Place of work:" %>
+        </div>
+        <div class="col-md-6">
+          <br />
+          <%= f.input :job, :autofocus => true, label: "Job title:" %>
+          <br />
+          <%= f.input :password, label: "Password:" %>
+          <br />
+          <%= f.input :password_confirmation, label: "Password confirmation:" %>
+        </div>
+        <div class="col-md-6">
+          <br />
+          <h6>Please tick this box if you permit Boehringer Ingelheim to send you two<br /> reminder emails prior to the live webinar and an email when the webinar <br />is archived for viewing on the website.</h6>
+          <%= f.input :reminder, :as => :boolean, :label => "Accept", :input_html => { :checked => "unchecked", style: "margin-left: 60px; margin-top: -29px;" } %>
+        </div>
+        <div class="col-md-6">
+          <br />
+          <h6>Please tick this box if you permit Boehringer Ingelheim to contact you in <br />the future regarding other similar activities.</h6>
+          <%= f.input :future, :as => :boolean, :label => "Accept", :input_html => { :checked => "unchecked", style: "margin-left: 60px; margin-top: -29px;" } %>  
+        </div>
+        <br />          
+        <div class="col-md-12" align="left" style ="margin-bottom: 25px;">
+          <p>Once you have registered, a confirmation email will be sent to you.</p>
+          <br />
+          <%= f.button :submit, "Submit", class: 'btn btn-primary btn-large' %>
+        </div>
       </div> <!-- col-md-6 -->
+      <br />
+      <div class="col-md-12">
+        <%= render 'layouts/newfooter' %>
+      </div>
   </div><!-- demo -->
+  <br />
 </div>
   <% end %>
 
@@ -56,10 +77,10 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <h4><span style="color: #CC0767">Unfortunately as you are not a healthcare professional you are not permitted to view these webinars.</span></h4>
+        <h4><span style="color: #3787ad">Unfortunately as you are not a healthcare professional you are not permitted to view these webinars.</span></h4>
       </div>
       <div class="modal-footer">
-        <%= link_to "Close", archive_path %>
+        <%= link_to "Close", root_path %>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
