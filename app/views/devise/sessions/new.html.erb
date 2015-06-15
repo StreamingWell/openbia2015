@@ -5,10 +5,12 @@
 	<div class="blockquote-box clearfix col-md-12" align="left" style="padding-bottom: 10px; margin-top:-75px;">
 			
 		<div class="col-md-6">
-			test
+			<h3 style="color:#3787ad;">How to improve patient outcomes in asthma:
+			<br />a webinar series</h3>
+			<p style="margin-right: 15px;">Boehringer Ingelheim are pleased welcome you to a series of educational webinar meetings. The webinars will provide continuing education and awareness on the latest developments in the treatment of asthma, with the overall aim to improve patient care.</p>
 		</div>
 		<div class="col-md-6">
-			<p style="color:#3787ad;">Login</p>	
+			<p style="color:#3787ad; margin-top: 25px;">Login</p>	
 			<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
 			<%= f.input :email, :autofocus => true, label: "Email Address" %>
 			<%= f.input :password %>
@@ -22,9 +24,9 @@
 			<% end %>
 
 			<br />
-
+		</div>
+		<div class="col-md-12">
 			<%= render 'layouts/newfooter' %>
-
 		</div>
 	</div>
 </div>
