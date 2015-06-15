@@ -12,6 +12,16 @@ $btnPrimaryBackground: purple;
         url('fonts/Helvetica.svg#Helvetica') format('svg');
     font-weight: normal;
     font-style: normal;
+}  
+
+@font-face {
+    font-family: 'Helvetica';
+    src:url('fonts/Helvetica.otf');
+    src:url('fonts/Helvetica.otf?#iefix') format('embedded-opentype'),
+        url('fonts/Helvetica.ttf') format('truetype'),
+        url('fonts/Helvetica.svg#Helvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }   
    
 html, body {
@@ -90,7 +100,7 @@ hr {
 .navbar-default .navbar-nav > li > a {
     color: #fff;
     font-size: 14px;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica',Helvetica,sans-serif;
     letter-spacing: 0.2em;
 }
 
@@ -141,7 +151,7 @@ hr {
 .btn {
     display: inline-block;
     margin-bottom: 0px;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica',Helvetica,sans-serif;;
     font-size: 14px;
     font-weight: normal;
     text-align: center;
