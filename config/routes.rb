@@ -1,7 +1,8 @@
 Openmicrosite::Application.routes.draw do
 
   # Home
-  root :to => 'pages#home'
+  #root :to => 'pages#home'
+  root :to => 'pages#coming_soon'
 
   # Live Webinar
   #root :to => 'pages#live'
@@ -25,6 +26,7 @@ Openmicrosite::Application.routes.draw do
   get 'firstinteractive' => 'pages#firstinteractive'
   get 'secondinteractive' => 'pages#secondinteractive'
   get 'help' => 'pages#help'
+  get 'coming_soon' => 'pages#coming_soon'
 
   # Feedback/submissions
   match 'contact' => 'contact#new', :as => 'contact', :via => :get

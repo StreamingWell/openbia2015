@@ -5,9 +5,11 @@
 <div class="container">
   	<div class="blockquote-box clearfix col-md-12" align="left" style="margin-top:-75px;">
 
-	    <h3 style="color: #3787ad; margin-top: 5px;">Webinar Feedback Form</h3>
+	    <h3 style="color: #3787ad; margin-top: 5px;">Interactive Questions</h3>
 	    <hr>
-	    <p>We would be very grateful if you could please take a minute to provide some feedback regarding the webinar you have recently watched.</p>
+
+	    <p>INSERT COPY HERE</p>
+	    <!-- <p>We would be very grateful if you could please take a minute to provide some feedback regarding the webinar you have recently watched.</p> -->
 
 		<!-- flash_notice to show if form submission is successful -->
 		<div class="alert alert-success" id="form-success" style="display: none;">
@@ -24,7 +26,7 @@
 
 		<%= simple_form_for @feedback, :url => feedback_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
-		<h4 style="color: #3787ad;">Please indicate which webinar you are providing feedback for?</h4>
+		<h4 style="color: #3787ad;">Please indicate which webinar you are providing feedback for</h4>
 		
 		<div class="container">
 
@@ -111,11 +113,11 @@
 		<%= form.submit "Submit", class: 'btn btn-primary btn-large' %>
 		</fieldset>
 		
-		<% end %>
+		<% end %> 
 
 		<br />
 
-		<%= render 'layouts/newfooter' %>
+		<%= render 'layouts/qfooter' %>
 		
 	</div>
 </div>

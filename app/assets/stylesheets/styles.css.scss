@@ -400,6 +400,27 @@ hr {
     font-weight: 400;
 }
 
+/* Table */
+.table-bordered {
+  border: none;
+}
+
+.table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > td {
+  border: 3px solid #afcfde;
+}
+
+.table-bordered > thead > tr > th {
+  border: 3px solid #3787ad;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+  background-color: whitesmoke;
+}
+
 /* Accordion */
 
 .glyphicon-lg{font-size:3em}
