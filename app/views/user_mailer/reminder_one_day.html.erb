@@ -408,7 +408,7 @@
 													<div mc:edit="std_content00">
 
 														<p style="color:#3787ad; font-size: 20px;">How to improve patient outcomes in asthma: a webinar series</p>
-														<p>Dear <!-- <%= @user.name %> -->INSERT USER NAME,</p>
+														<p>Dear <%= @user.name %>,</p>
 
 														<p>Thank you for registering your interest in the Boehringer Ingelheim sponsored asthma webinar series.</p>
 														<p>This is a reminder that at 12.30 tomorrow Dr Mark Levy and Dan Murphy will be presenting a webinar entitled:</p>
@@ -421,7 +421,7 @@
 														<br />
 														<p>To watch the webinar live please log in at <a href="http://www.biasthmawebinars.com/login">www.biasthmawebinars.com</a></p>
 														<p><strong>Your log-in details are as follows:</strong></p>
-														<p><strong>Username:</strong> <!-- <%= @user.email %> --> INSERT USER EMAIL ADDRESS</p>
+														<p><strong>Username:</strong> <%= @user.email %></p>
 														<p><strong>Password:</strong> Your password was emailed to you when you first registered. If you have forgotten your password please <a href="http://www.biasthmawebinars.com/users/password/new">click here</a> to reset it.</p>
 
 														<br />
