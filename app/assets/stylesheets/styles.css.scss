@@ -260,6 +260,10 @@ hr {
     background-repeat: no-repeat;
     border-bottom: solid 6px;
     border-color: #afcfde;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .title-header-2 {
@@ -276,6 +280,10 @@ hr {
     background-repeat: no-repeat; 
     border-bottom: solid 6px;
     border-color: #afcfde;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .title-header-3 {
@@ -291,7 +299,11 @@ hr {
     padding-bottom: 150px;
     background-repeat: no-repeat;
     border-bottom: solid 6px;
-    border-color: #afcfde; 
+    border-color: #afcfde;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
 

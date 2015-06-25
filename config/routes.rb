@@ -1,8 +1,8 @@
 Openmicrosite::Application.routes.draw do
 
   # Home
-  root :to => 'pages#home'
-  #root :to => 'pages#coming_soon'
+  #root :to => 'pages#home'
+  root :to => 'pages#coming_soon'
 
   # Live Webinar
   #root :to => 'pages#live'
