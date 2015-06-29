@@ -55,7 +55,7 @@ class PagesController < ApplicationController
     @secondinteractive = Secondinteractive.new
   end
 
-  #protected
+  protected
 
     def authenticate
   	  authenticate_or_request_with_http_basic do |username, password|
