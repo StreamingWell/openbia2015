@@ -5,7 +5,7 @@ class FeedbackMailer < ActionMailer::Base
 
   def new_feedback(feedback)
     @feedback = feedback
-    mail(:subject => "Evaluation: BI Asthma Webinar")
+    mail(:subject => "Evaluation: biasthmawebinars.com")
   end
 
 end

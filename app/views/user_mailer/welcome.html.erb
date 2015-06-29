@@ -408,12 +408,12 @@
 													<div mc:edit="std_content00">
 														
 														<p style="color:#3787ad; font-size: 20px;">How to improve patient outcomes in asthma: a webinar series</p>
-														<p>Dear <%= @user.name %>,</p>
+														<p>Dear <!-- <%= @user.name %> -->INSERT USER NAME,</p>
 
 														<p>Thank you for registering your interest in the Boehringer Ingelheim sponsored asthma webinar series.</p>
 														<p><strong>Your log-in details are as follows:</strong></p>
-														<p><strong>Username:</strong> <%= @user.email %></p>
-														<p><strong>Password:</strong> <%= @user.password %></p>
+														<p><strong>Username:</strong> <!-- <%= @user.email %> --> INSERT USER EMAIL ADDRESS</p>
+														<p><strong>Password:</strong> <!-- <%= @user.password %> --> INSERT USER PASSWORD</p>
 
 														<p>Please use these log-in details every time you wish to visit the webinar website: <a href="http://www.biasthmawebinars.com/login">www.biasthmawebinars.com</a></p>
 
@@ -422,8 +422,8 @@
 														<p><strong>Meeting series overview:</strong></p>
 
 														<p><span style="color:#3787ad;"><strong>National Review of Asthma Deaths (NRAD) one year on: Improving asthma diagnosis and reducing hospital admissions</strong></span><br />Wednesday 8th July 2015 12:30 – 13:15<p>
-														<p>Dr Mark Levy, NRAD clinical lead, Royal College of Physicians (RCP) <br />
-														Dan Murphy, Managing Director, External Affairs at Asthma UK </p>
+														<p>Dr Mark L Levy, Clinical Lead, National Review of Asthma Deaths (2011-2014) <br />
+														Dr Carine Lewis, Senior Analyst, Asthma UK </p>
 		
 												    <hr style="border: 1px solid #3787ad; margin-top: 25px; margin-bottom: 25px;">
 
@@ -452,7 +452,7 @@
 														<br />
 														<small>Job code: UK/SPI-151314t</small>
 														<br />
-														<small>These webinars are organised and funded by Boehringer Ingelheim</small>
+														<small>These webinars were organised and funded by Boehringer Ingelheim. The speakers have been invited and briefed by Boehringer Ingelheim.</small>
 
                                                         </td>
                                                     </tr>

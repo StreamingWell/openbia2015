@@ -6,12 +6,12 @@ class NotificationsMailer < ActionMailer::Base
   def new_message(message, user)
     @user = user
     @message = message
-    mail(:subject => "Question: BI Asthma Webinar")
+    mail(:subject => "Question: biasthmawebinars.com")
   end
 
   def new_feedback(feedback, user)
     @user = user
     @feedback = feedback
-    mail(:subject => "Evaluation: BI Asthma Webinar")
+    mail(:subject => "Evaluation: biasthmawebinars.com")
   end
 end
