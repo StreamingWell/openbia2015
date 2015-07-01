@@ -69,5 +69,5 @@ Openmicrosite::Application.configure do
   config.action_mailer.default_url_options = { :host => 'intense-bayou-2347.herokuapp.com' }
 
   # replace this with your tracker code
-  GA.tracker = "UA-51390201-1"
+  GA.tracker = "UA-64706306-1"
 end
