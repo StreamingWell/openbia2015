@@ -22,39 +22,18 @@
 	<div class="">
 			<%= simple_form_for @secondinteractive, :url => secondinteractive_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
-				<h4>Firstly, please indicate which webinar you are providing feedback for?</h4>
-					<%= form.input :lecture, as: :radio_buttons, collection: ['Working together: organising care for optimal management of prostate cancer', 'Maximising quality of life for patients with advanced prostate cancer', 'Androgens and prostate cancer: source, role and management'], label: false %>
+			<h4>Q1: In NRAD, a key message was that patients failed to get help in time. What percentage of patients who died had not been given a personal asthma action plan?</h4>
+
+				<%= form.input :question1, as: :radio_buttons, collection: ['25%', '50%', '75%'], label: false %>
 				<br>
 
-			<h4>Q1: How relevant did you find the information presented to your day to day clinical work?</h4>
-
-				<%= form.input :relevance, as: :radio_buttons, collection: ['Very relevant', 'Partly relevant', 'Not at all relevant'], label: false %>
+			<h4>Q2: A key action identified by NRAD is to ensure an accurate diagnosis of asthma and cause of death. Of the patients considered to have died of asthma, what percentage had no evidence of asthma?</h4>
+				<%= form.input :question2, as: :radio_buttons, collection: ['10%', '20%', '30%'], label: false %>
 				<br>
 
-			<h4>Q2: How did you find the amount of information presented?</h4>
-				<%= form.input :info_presented, as: :radio_buttons, collection: ['Too much', 'About right', 'Too little'], label: false %>
-				<br>
+			<h4>Q3: Asthma control must be assessed in order to classify severity. What percentage of patients in NRAD had no assessment of asthma control?</h4>
 
-			<h4>Q3: How likely is it that you will change your clinical practice as a result of what you have learned from this webinar?</h4>
-
-				<%= form.input :likelihood_change, as: :radio_buttons, collection: ['Very likely', 'Quite likely', 'Unlikely'], label: false %>
-				<br>
-
-				<p>Please explain your response in the following box</p>
-	  			<%= form.input :body, label: false, required: false, as: :text, input_html: { rows: "3" } %>
-
-			<br>
-
-			<h4>Q4: How did you find the technical quality of the webinar?</h4>
-
-				<%= form.input :technical, as: :radio_buttons, collection: ['Good', 'Satisfactory', 'Poor'], label: false %>
-				<br>
-
-	  			<p><strong>Please add any further comments below:</strong></p>
-			  	  <%= form.input :comment, label: false, required: false, as: :text, input_html: { rows: "3" } %>
-			  <br>
-			  <p>Thank you very much for your feedback.</p>
-			  <br>
+				<%= form.input :question3, as: :radio_buttons, collection: ['15%', '19%', '24%'], label: false %>
 			  </div>
 
 				  <fieldset class="actions">

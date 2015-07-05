@@ -4,14 +4,9 @@ class Secondinteractive
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :lecture, :relevance, :info_presented, :likelihood_change,
-                :technical, :body, :comment, :future, :follow
+  attr_accessor :question1, :question2, :question3
 
-  validates :lecture, :relevance, :info_presented, :likelihood_change,
-            :body, :technical, :future, :follow, presence: true
-
-  validates :lecture, :relevance, :info_presented, :likelihood_change,
-            :body, :technical, :future, :follow, presence: true
+  validates :question1, :question2, :question3, presence: true
 
   def initialize(attributes = {})
     attributes.each do |name, value|

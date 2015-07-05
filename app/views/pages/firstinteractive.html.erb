@@ -1,20 +1,21 @@
-<div class="jumbotron">
-	<%= render 'layouts/title' %>
+<% if user_signed_in? %>
+
+<div class="title-header-1">
 </div>
 
 <div class="container">
-  <div class="blockquote-box clearfix col-md-8 col-md-offset-2" align="left" style="padding-bottom: 10px; margin-top:-25px;">
-	  <h3 style="color: #3787ad; margin-top: 5px;">Interactive Questions</h3>
-	  <h5><span style="color: rgb(167, 43, 77)">We’d be very grateful if you could please just spend one minute providing feedback regarding the webinar you have recently watched.</span></h5>
+  <div class="blockquote-box clearfix col-md-8 col-md-offset-2" align="left" style="margin-top:-75px;">
+		<h3 style="color: #3787ad; margin-top: 5px;">Interactive questions</h3>
+		<hr>
 
 			<!-- flash_notice to show if form submission is successful -->
 		<div class="alert alert-success" id="form-success" style="display: none;">
-			<strong>Thank you for your feedback.</strong>
+			<strong>Thank you for your answers.</strong>
 		</div>
 
 		<!-- flash_notice to show if form submission is unsuccessful -->
 		<div class="alert alert-error" id="form-error" style="display: none;">
-			<strong>Please fill in all fields.</strong>
+			<strong>Please answer all questions.</strong>
 		</div>
 
 		<br />
@@ -22,26 +23,53 @@
 	<div class="">
 			<%= simple_form_for @firstinteractive, :url => firstinteractive_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
-			<h4>Q1: How relevant did you find the information presented to your day to day clinical work?</h4>
+			<h4 style="color: #3787ad;">Q1: In NRAD, a key message was that patients failed to get help in time. What percentage of patients who died had not been given a personal asthma action plan?</h4>
 
-				<%= form.input :question1, as: :radio_buttons, collection: ['Very relevant', 'Partly relevant', 'Not at all relevant'], label: false %>
-				<br>
+			<div class="container">
+			
+			<%= form.input :question1, as: :radio_buttons, collection: ['25%', '50%', '75%'], label: false %>
+			
+			</div>
 
-			<h4>Q2: How did you find the amount of information presented?</h4>
-				<%= form.input :question2, as: :radio_buttons, collection: ['Too much', 'About right', 'Too little'], label: false %>
-				<br>
+			<br />
 
-			<h4>Q3: How likely is it that you will change your clinical practice as a result of what you have learned from this webinar?</h4>
+			<h4 style="color: #3787ad;">Q2: A key action identified by NRAD is to ensure an accurate diagnosis of asthma and cause of death. Of the patients considered to have died of asthma, what percentage had no evidence of asthma?</h4>
 
-				<%= form.input :question3, as: :radio_buttons, collection: ['Very likely', 'Quite likely', 'Unlikely'], label: false %>
+			<div class="container">
 
-	  		<br />
-			  </div>
+			<%= form.input :question2, as: :radio_buttons, collection: ['10%', '20%', '30%'], label: false %>
+	
+			</div>
+			
+			<br />
+
+			<h4 style="color: #3787ad;">Q3: Asthma control must be assessed in order to classify severity. What percentage of patients in NRAD had no assessment of asthma control?</h4>
+
+			<div class="container">
+
+			<%= form.input :question3, as: :radio_buttons, collection: ['15%', '19%', '24%'], label: false %>
+
+			</div>
+
+	  	<br />
+	</div>
+
+		<hr>
+		<br />
 
 				  <fieldset class="actions">
 				    <%= form.submit "Submit", class: 'btn btn-primary btn-large' %>
 				  </fieldset>
 			<% end %>
+
+			<br />
+
+      <%= render 'layouts/julynfooter' %>      
+
 		</div>
 	</div>
 </div>
+
+<% else %>
+  <%= render 'layouts/preregistration' %>
+<% end %>

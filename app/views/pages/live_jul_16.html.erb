@@ -9,7 +9,7 @@
         <h3 style="color:#3787ad; margin-top: 5px;">Live Webinar: The PRIMIS Asthma audit tool live demonstration</h3>
         <hr>
         <br/>
-        <div class="col-md-8" align="left" style="padding-bottom: 10px; margin-top: 0px;">
+        <div class="col-md-7" align="left" style="padding-bottom: 10px; margin-top: 0px;">
             <!-- <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/100429807' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div> -->
             <img src="http://placehold.it/640x360" class="img-responsive"/>
             <!-- <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://cdn.livestream.com/embed/streamingwell?layout=4&color=0xe7e7e7&autoPlay=false&mute=false&iconColorOver=0x888888&iconColor=0x777777&allowchat=true' style='border:0;outline:0' frameborder='0' scrolling='no'></iframe></div> -->
@@ -18,7 +18,7 @@
             <br />
         </div>
                 
-        <div class="col-md-4" align="left" style="padding-bottom: 10px; margin-top: 0px; ">
+        <div class="col-md-5" align="left" style="padding-bottom: 10px; margin-top: 0px; ">
             <p>Lauren Fensome, Learning Consultant (PRIMIS) University of Nottingham</p>
             <p >16<sup>th</sup> July 2015 at 12.30-13.15</p>
             <!-- flash_notice to show if form submission is successful -->
@@ -33,12 +33,16 @@
             <br />
             <%= form.input :body, label: "Please submit a question in the box below:", required: false, as: :text, input_html: { rows: "3" } %>
             <br />
+             <div class="col-md-4" style="margin-left: -15px;">
             <%= form.submit "Send", class: 'btn btn-primary btn-large' %>
             <% end %>
-
+            </div>
+            <div class="col-md-8">
+            <!-- Button trigger modal -->
+            <a data-toggle="modal" href="#myModal" class="btn btn-danger btn-large">Interactive Questions</a>
             <br />
-
         </div>
+    </div>
          <div class="col-md-12">
             <%= render 'layouts/ofooter' %>
         </div>
