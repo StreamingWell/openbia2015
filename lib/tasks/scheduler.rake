@@ -8,7 +8,7 @@ desc "This task is called by the Heroku scheduler add-on"
 # reminder_one_day - sent on nov 25th, jan 14, march 5
 # reminder_archive - sent nov 27th, jan 16, march 7
 
-# This task will be run everyday at 8am UTC
+# This task will be run everyday at 13:30 UTC
 task :send_reminders => :environment do
     puts 'Checking to see if reminder emails should be sent'
     User.check_and_send_one_day_reminders
