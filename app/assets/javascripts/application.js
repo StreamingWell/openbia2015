@@ -13,3 +13,30 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+
+
+
+//$(document).ready(function(){
+
+//
+//  $("#int-questions").click(function(){
+//  	if(confirm('Do you want to continue?')){
+//      $("#if-form").show();		
+//  	}
+  	
+//  })
+
+//  $("#if-form-submit").click(function(event){
+//  	event.preventDefault();
+//    $("#if-form").show();
+//    $("#firstinteractive-form").submit();
+
+//    $.ajax({
+//    	data: $("#firstinteractive-form").serializeArray(),
+//      method: "POST",
+//      url: $("#firstinteractive-form").attr('action')
+//    })
+//  })
+  
+
+//})

@@ -4,28 +4,17 @@ Email Address: <%= @user.email %>
 
 <!-- firstinteractive form contents to go her -->
 
-First Interactive Questions: <%= @firstinteractive.lecture %>
+First Interactive Questions:
 
 Q1: How relevant did you find the information presented to your day to day clinical work:
 
-<%= @firstinteractive.relevance %>
+<%= @firstinteractive.question1 %>
 
 Q2: How did you find the amount of information presented?
 
-<%= @firstinteractive.info_presented %>
+<%= @firstinteractive.question2 %>
 
 Q3: How likely is it that you will change your clinical practice as a result of what you have learned from this webinar?
 
-<%= @firstinteractive.likelihood_change %>
+<%= @firstinteractive.question3 %>
 
-If you answered ‘very likely’ or ‘quite likely’ to the last question, please explain how in the following box:
-
-<%= @firstinteractive.body %>
-
-Q4: How did you find the technical quality of the webinar?
-
-<%= @firstinteractive.technical %>
-
-Please add any further comments below:
-
-<%= @firstinteractive.comment %>

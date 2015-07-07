@@ -15,6 +15,7 @@ class PagesController < ApplicationController
 
   def live_jul_8
     @message = Message.new
+    @firstinteractive = Firstinteractive.new
   end
   
   def live_jul_16

@@ -40,12 +40,14 @@
             </div>
             <div class="col-md-8">
             <!-- Button trigger modal -->
-            <a href="#" class="btn btn-danger btn-large">Interactive Questions</a>
+            <!-- <a href="#" class="btn btn-danger btn-large" id="int-questions">Interactive Questions</a> -->
+            <a data-toggle="modal" href="#myModal" class="btn btn-danger btn-large">Interactive Questions</a>
             <br />
         </div>
         </div>
 
         <div class="col-md-12">
+           
             <%= render 'layouts/ofooter' %>
         </div>
 
@@ -61,3 +63,56 @@
 <% else %>
   <%= render 'layouts/preregistration' %>
 <% end %>
+
+<!-- Modal to show if not a healthcare professional -->
+<div class="modal fade" style="margin-top: 200px;" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+         <!-- <div style="display:none;" id="if-form"> -->
+    <%= simple_form_for @firstinteractive, :url => firstinteractive_path, method: :post, html: { class: "form-horizontal", id: "firstinteractive-form"} do |form| %>
+
+    <h4 style="color: #3787ad;">Q1: In NRAD, a key message was that patients failed to get help in time. What percentage of patients who died had not been given a personal asthma action plan?</h4>
+
+    <div class="container">
+    
+    <%= form.input :question1, as: :radio_buttons, collection: ['25%', '50%', '75%'], label: false %>
+    
+    </div>
+
+    <br />
+
+    <h4 style="color: #3787ad;">Q2: A key action identified by NRAD is to ensure an accurate diagnosis of asthma and cause of death. Of the patients considered to have died of asthma, what percentage had no evidence of asthma?</h4>
+
+    <div class="container">
+
+    <%= form.input :question2, as: :radio_buttons, collection: ['10%', '20%', '30%'], label: false %>
+
+    </div>
+    
+    <br />
+
+    <h4 style="color: #3787ad;">Q3: Asthma control must be assessed in order to classify severity. What percentage of patients in NRAD had no assessment of asthma control?</h4>
+
+    <div class="container">
+
+    <%= form.input :question3, as: :radio_buttons, collection: ['15%', '19%', '24%'], label: false %>
+
+    </div>
+
+    <br />
+    <hr>
+    <br />
+
+    <fieldset class="actions">
+        <%= form.submit "Submit", class: 'btn btn-primary btn-large', id: "if-form-submit" %>
+    </fieldset>
+    <% end %>  
+    </div>         
+      </div>
+      <div class="modal-footer">
+        <%= link_to "Close", live_path %>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

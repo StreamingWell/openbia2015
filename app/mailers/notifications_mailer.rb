@@ -14,4 +14,16 @@ class NotificationsMailer < ActionMailer::Base
     @feedback = feedback
     mail(:subject => "Evaluation: biasthmawebinars.com")
   end
+
+  def new_firstinteractive(firstinteractive, user)
+    @user = user
+    @firstinteractive = firstinteractive
+    mail(:subject => "First Attempt Interactive Questions: biasthmawebinars.com")
+  end
+
+  def new_secondinteractive(secondinteractive, user)
+    @user = user
+    @secondinteractive = secondinteractive
+    mail(:subject => "Second Attempt Interactive Questions: biasthmawebinars.com")
+  end
 end
