@@ -83,12 +83,12 @@ hr {
 /* Navbar */
 
 .navbar {
-    min-height: 104px !important;
+    /* min-height: 104px !important; */
 }
 
 .navbar-nav {
     float: left;
-    margin: none !important;
+    margin: 10px 0px 10px !important;
 }
 
 .navbar-default {
@@ -128,10 +128,8 @@ hr {
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 30px;
-  margin-bottom: 8px;
+  margin: 25px 15px 25px;
   background-color: white;
   background-image: none;
 }
