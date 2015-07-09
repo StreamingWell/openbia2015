@@ -28,7 +28,6 @@ html, body {
    font-family: "Helvetica",Helvetica,sans-serif;
    color: #4d4d4d;
    height: 100%;
-   overflow-x: visible;
    background-color: #f5f5f5;
 }
 
@@ -709,6 +708,6 @@ hr {
         display: block!important;
     }
     .collapsing {
-        overflow: visible!important;
+        overflow: hidden!important;
     }
 }

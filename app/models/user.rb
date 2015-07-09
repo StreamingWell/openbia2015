@@ -71,7 +71,7 @@ class User < ActiveRecord::Base
   def self.check_and_send_two_week_reminders
     # should be sent on the following dates
     #reminder_two_weeks - sent on nov 12, jan 10th, feb 20th
-    date1 = Date.new(2014, 6, 24)
+    date1 = Date.new(2015, 7, 9)
     date2 = Date.new(2014, 1, 10)
     date3 = Date.new(2014, 2, 20)
 
