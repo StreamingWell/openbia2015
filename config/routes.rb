@@ -13,8 +13,8 @@ Openmicrosite::Application.routes.draw do
 
   # Static pages
   get 'home' => 'pages#home'
-  # get 'live' => 'pages#live'
-  # get 'live_jul_8' => 'pages#live_jul_8'
+  get 'live' => 'pages#live'
+  get 'live_jul_8' => 'pages#live_jul_8'
   get 'live_jul_16' => 'pages#live_jul_16'
   get 'live_sept_9' => 'pages#live_sept_9'
   get 'archive' => 'pages#archive'
@@ -23,7 +23,7 @@ Openmicrosite::Application.routes.draw do
   get 'archive_sept_9' => 'pages#archive_sept_9'
   get 'login' => 'pages#login'
   get 'evaluation' => 'pages#evaluation'
-  #get 'firstinteractive' => 'pages#firstinteractive'
+  get 'firstinteractive' => 'pages#firstinteractive'
   #get 'secondinteractive' => 'pages#secondinteractive'
   get 'help' => 'pages#help'
   #get 'coming_soon' => 'pages#coming_soon'
