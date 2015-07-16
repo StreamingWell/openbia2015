@@ -16,7 +16,7 @@
         <% if user_signed_in? %>
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li style="margin-top: 3px;"><%= link_to "Home", home_path %></li>
+            <li style="margin-top: 3px;"><%= link_to "Home", root_path %></li>
             <li style="margin-top: 3px;"><%= link_to "Archive", archive_path %></li>
             <li style="margin-top: 3px;"><%= link_to "Help Centre", help_path %></li>
             <li style="margin-top: 3px;"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
