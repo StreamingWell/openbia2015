@@ -19,7 +19,7 @@ class UserMailer < ActionMailer::Base
 
   def archive_email(user)
     @user = user
-    mail(subject: 'Notification that a recent BI Asthma Webinar is now available to view', to: user.email)
+    mail(subject: 'A recently recorded webinar is now available to view at biasthmawebinars.com', to: user.email)
   end
 
   #def evaluation_email(user)
