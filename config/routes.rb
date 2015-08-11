@@ -14,8 +14,8 @@ Openmicrosite::Application.routes.draw do
   # Static pages
   get 'home' => 'pages#home'
   get 'live' => 'pages#live'
-  get 'live_jul_8' => 'pages#live_jul_8'
-  get 'live_jul_16' => 'pages#live_jul_16'
+  #get 'live_jul_8' => 'pages#live_jul_8'
+  #get 'live_jul_16' => 'pages#live_jul_16'
   get 'live_sept_9' => 'pages#live_sept_9'
   get 'archive' => 'pages#archive'
   get 'archive_jul_8' => 'pages#archive_jul_8'

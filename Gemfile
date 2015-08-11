@@ -8,6 +8,7 @@ gem 'newrelic_rpm'
 gem 'thin'
 gem 'google-analytics-rails'
 gem 'metamagic'
+gem 'magnific-popup-rails'
 
 group :production do
 	gem 'pg'

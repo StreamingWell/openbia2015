@@ -67,6 +67,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.1.2)
       launchy (~> 2.2)
+    magnific-popup-rails (0.9.9.1)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -152,6 +153,7 @@ DEPENDENCIES
   google-analytics-rails
   jquery-rails
   letter_opener
+  magnific-popup-rails
   metamagic
   newrelic_rpm
   pg
