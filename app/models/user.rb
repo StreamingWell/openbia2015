@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
     # should be sent on following dates
     # reminder_archive - sent nov 27th, jan 16, march 7
     date1 = Date.new(2015, 8, 12)
-    date2 = Date.new(2014, 1, 14)
+    date2 = Date.new(2015, 8, 14)
     date3 = Date.new(2014, 1, 14)
 
     # check if we are on one of the require days
