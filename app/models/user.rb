@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :company, :job, :password,
                   :password_confirmation, :remember_me, :hcp, :nothcp, :reminder, :future
 
-  INVALID_EMAILS = %w(virginmedia.com ee.co.uk plus.net aol.com aol.co.uk sky.com tiscali.co.uk btinternet.com gmail.com googlemail.com hotmail.co.uk hotmail.com live.co.uk yahoo.com yahoo.co.uk yahoo.gr yahoo.fr outlook.com outlook.co.uk icloud.com ymail.com mail.com bigstring.com talktalk.co.uk )
+  INVALID_EMAILS = %w(virginmedia.com ee.co.uk plus.net aol.com aol.co.uk sky.com tiscali.co.uk btinternet.com gmail.com googlemail.com hotmail.co.uk hotmail.com live.co.uk yahoo.com yahoo.co.uk yahoo.gr yahoo.fr outlook.com outlook.co.uk icloud.com ymail.com mail.com bigstring.com talktalk.co.uk groovygecko.com liquidproductions.co.uk )
   validates_format_of :email,
                       :without => /#{INVALID_EMAILS.map{|a| Regexp.quote(a)}.join('|')}/,
                       :message => "Please register using your work email address."
@@ -71,9 +71,9 @@ class User < ActiveRecord::Base
   def self.check_and_send_two_week_reminders
     # should be sent on the following dates
     #reminder_two_weeks - sent on nov 12, jan 10th, feb 20th
-    date1 = Date.new(2015, 7, 9)
+    date1 = Date.new(2014, 7, 9)
     date2 = Date.new(2014, 1, 10)
-    date3 = Date.new(2014, 9, 2)
+    date3 = Date.new(2015, 9, 2)
 
     if date1.today? || date2.today? || date3.today?
       users = self.suitable_for_reminders
