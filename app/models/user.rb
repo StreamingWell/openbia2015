@@ -55,8 +55,8 @@ class User < ActiveRecord::Base
   def self.check_and_send_one_day_reminders
     # should be sent on the following dates
     # reminder_one_day - sent on jul 7th, jul 15th, sept 8th
-    date1 = Date.new(2015, 7, 7)
-    date2 = Date.new(2015, 7, 15)
+    date1 = Date.new(2014, 7, 7)
+    date2 = Date.new(2014, 7, 15)
     date3 = Date.new(2015, 9, 8)
 
     if date1.today? || date2.today? || date3.today?
