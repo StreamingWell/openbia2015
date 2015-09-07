@@ -73,7 +73,7 @@ class User < ActiveRecord::Base
     #reminder_two_weeks - sent on nov 12, jan 10th, feb 20th
     date1 = Date.new(2014, 7, 9)
     date2 = Date.new(2014, 1, 10)
-    date3 = Date.new(2015, 9, 2)
+    date3 = Date.new(2014, 9, 2)
 
     if date1.today? || date2.today? || date3.today?
       users = self.suitable_for_reminders
