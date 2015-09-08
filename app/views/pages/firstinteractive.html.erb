@@ -23,31 +23,31 @@
 	<div class="">
 			<%= simple_form_for @firstinteractive, :url => firstinteractive_path, method: :post, html: { class: "form-horizontal"} do |form| %>
 
-			<h4 style="color: #3787ad;">Q1: In NRAD, a key message was that patients failed to get help in time. What percentage of patients who died had not been given a personal asthma action plan?</h4>
+			<h4 style="color: #3787ad;">Q1: How many drug-device-dose combinations are currently available in the UK?</h4>
 
 			<div class="container">
 			
-			<%= form.input :question1, as: :radio_buttons, collection: ['25%', '50%', '75%'], label: false %>
+			<%= form.input :question1, as: :radio_buttons, collection: ['36', '68', 'Over 90'], label: false %>
 			
 			</div>
 
 			<br />
 
-			<h4 style="color: #3787ad;">Q2: A key action identified by NRAD is to ensure an accurate diagnosis of asthma and cause of death. Of the patients considered to have died of asthma, what percentage had no evidence of asthma?</h4>
+			<h4 style="color: #3787ad;">Q2: What percentage of patients cannot use a metered-dose inhaler (MDI) correctly?</h4>
 
 			<div class="container">
 
-			<%= form.input :question2, as: :radio_buttons, collection: ['10%', '20%', '30%'], label: false %>
+			<%= form.input :question2, as: :radio_buttons, collection: ['Over 90%', '65%', '48%'], label: false %>
 	
 			</div>
 			
 			<br />
 
-			<h4 style="color: #3787ad;">Q3: Asthma control must be assessed in order to classify severity. What percentage of patients in NRAD had no assessment of asthma control?</h4>
+			<h4 style="color: #3787ad;">Q3: From global studies, what percentage of patients with asthma or chronic obstructive pulmonary disease (COPD) have never received verbal inhaler technique instruction?</h4>
 
 			<div class="container">
 
-			<%= form.input :question3, as: :radio_buttons, collection: ['15%', '19%', '24%'], label: false %>
+			<%= form.input :question3, as: :radio_buttons, collection: ['15%', '25%', '40%'], label: false %>
 
 			</div>
 
@@ -64,7 +64,7 @@
 
 			<br />
 
-      <%= render 'layouts/julynfooter' %>      
+      <%= render 'layouts/augustamfooter' %>      
 
 		</div>
 	</div>
