@@ -33,7 +33,7 @@
                 </div>
                 <%= simple_form_for @message, :url => contact_path, method: :post, remote: true, html: { class: "form-horizontal"} do |form| %>
                 <br />
-                <%= form.input :body, label: "Please submit a question in the box below:", required: false, as: :text, input_html: { rows: "3" } %>
+                <%= form.input :question, label: "Please submit a question in the box below:", required: false, as: :text, input_html: { rows: "3" } %>
                 <br />
                  <div class="col-md-4" style="margin-left: -15px;">
             <%= form.submit "Send", class: 'btn btn-primary btn-large' %>
